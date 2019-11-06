@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>exam</groupId>
+  <artifactId>maven_exam_day01</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <!-- 配置多层依赖 -->
+  <dependencies>
+  	<!-- 配置单个依赖 -->
+  	<dependency>
+  		<!-- 组织名称 -->
+  		<groupId>org.springframework</groupId>
+  		<!-- 依赖名称 -->
+  		<artifactId>spring-context</artifactId>
+  		<!-- 版本号 -->
+  		<version>4.2.4.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-struts</artifactId>
+  		<version>3.0.5.RELEASE</version>
+  		<!-- 排除多个有冲突的jar -->
+  		<exclusions>
+  			<!-- 排除单个jar -->
+  			<exclusion>
+  				<!-- jar名称 -->
+  				<groupId>spring-struts</groupId>
+  				<artifactId>spring-beans</artifactId>
+  			</exclusion>
+  		</exclusions>
+  	</dependency>
+  </dependencies>
+</project>
