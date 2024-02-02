@@ -13,7 +13,7 @@
   		<!-- 依赖名称 -->
   		<artifactId>spring-context</artifactId>
   		<!-- 版本号 -->
-  		<version>4.2.4.RELEASE</version>
+  		<version>5.2.22.RELEASE</version>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
